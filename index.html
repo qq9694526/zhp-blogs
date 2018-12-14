@@ -125,6 +125,40 @@
             border-spacing: 0;
         }
 
+        .icon-right {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 1.5rem;
+            background: black;
+            display: inline-block;
+            position: relative;
+            vertical-align: sub;
+        }
+
+        .icon-right:before,
+        .icon-right::after {
+            content: "";
+            height: 70%;
+            width: 3px;
+            border-radius: 3px;
+            display: block;
+            background: white;
+            position: absolute;
+            top: 21%;
+            left: 58%;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+        }
+
+        .icon-right::before {
+            height: 50%;
+            transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            position: absolute;
+            top: 36%;
+            left: 26%;
+        }
+
         /*粘连footer*/
         html,
         body,
@@ -168,7 +202,7 @@
             color: #2c3e50;
         }
 
-        .header .text-right {
+        .text-right {
             text-align: right;
         }
 
@@ -292,7 +326,7 @@
                     <p>一名
                         <b>成熟、丰满、有理想</b>的web前端攻城狮。前端攻城5年，精通Javascript、Vue、Node、Solidity、微信小程序等。一直致力于Web技术的研究，擅长前端自动化、工程化，在前端跨栈进阶到
                         Node.js 开发的编程道路上颇有心得。智能合约开发践行者。</p>
-                    <!--<p>座右铭：拥抱最新前端技术，打造极致用户体验。</p>-->
+                    <!-- <p>座右铭：拥抱最新前端技术，打造极致用户体验。</p> -->
                 </section>
                 <section class="section">
                     <h1>技术栈</h1>
@@ -321,13 +355,13 @@
                 </section>
                 <section class="section">
                     <h1>计划2019</h1>
-                    <p>1、学习react native，成为一名跨平台全栈攻城狮；</p>
-                    <p>2、修炼编程内功，坚持写博客，更好的沉淀知识与经验。</p>
+                    <p>1、修炼编程内功，算法、设计模式等；</p>
+                    <p>2、坚持写博客，更好的沉淀知识与经验。</p>
                 </section>
                 <section class="section">
                     <h1>计划2018</h1>
-                    <p>1、学习node，成为一名全栈工程师；</p>
-                    <p>2、倾尽一生的去开发维护一个开源项目。</p>
+                    <p><span class="icon-right"></span>1、学习node，成为一名全栈工程师；</p>
+                    <p><span class="icon-right"></span>2、倾尽一生的去开发维护一个开源项目。</p>
                 </section>
                 <section class="section">
                     <h1>梦想</h1>
